@@ -1,12 +1,15 @@
 {
-  "name": "platziVideo",
+  "name": "platzi-media-player",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto del curso profesional de JavaScript",
+  "license": "MIT",
+  "author": "Carolina Salazar <cindy.s.r.28@hotmail.com>",
+  "keywords": ["Platzi"],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
