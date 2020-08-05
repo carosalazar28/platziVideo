@@ -36,3 +36,8 @@ main {
 .movie {
   width: 100%;
 }
+
+div > p {
+  letter-spacing: 2.5;
+  padding: 10px;
+}
