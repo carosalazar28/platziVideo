@@ -4,12 +4,18 @@
   "description": "Proyecto del curso profesional de JavaScript",
   "license": "MIT",
   "author": "Carolina Salazar <cindy.s.r.28@hotmail.com>",
-  "keywords": ["Platzi"],
+  "keywords": [
+    "Platzi"
+  ],
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html typescript/index.html"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.7"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
