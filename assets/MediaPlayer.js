@@ -19,10 +19,18 @@ mediaPlayer.prototype._initPlugins = function () {
    }) 
 }
 
-mediaPlayer.prototype.play = function () {
+mediaPlayer.prototype.corazon = function () {
     this.media.paused
         ? this.media.play()
         : this.media.pause()
+}
+
+mediaPlayer.prototype.pause = function () {
+        this.media.pause()
+}
+
+mediaPlayer.prototype.play = function () {
+    this.media.play()
 }
 
 mediaPlayer.prototype.mute = function () {

@@ -11,5 +11,5 @@ const player = new mediaPlayer({
     plugins: [new AutoPlay(), new AutoPause()], 
 })
 
-button1.onclick = () => player.play()
+button1.onclick = () => player.corazon()
 button2.onclick = () => player.unmute()
