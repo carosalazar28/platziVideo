@@ -1,0 +1,43 @@
+import mediaPlayer from "../../MediaPlayer";
+import Ads, {Ad} from "./ads"
+
+class AdsPlugin {
+    private ads: Ads
+    private player: mediaPlayer
+    private media: HTMLMediaElement
+    private currentAd: Ad
+    private adsContainer: HTMLElement
+
+    constructor() {
+        this.ads = Ads.getInstance()
+        this.adsContainer = document.createElement('div')
+        this.handleTimeUpdate = this.handleTimeUpdate.bind(this)
+    }
+
+    run(player: mediaPlayer) {
+        this.player = player
+        this.player.container.appendChild(this.adsContainer)
+        this.media = this.player.media
+        this.media.addEventListener('timeupdate', this.handleTimeUpdate)
+    }
+
+    private handleTimeUpdate () {
+        const currentTime = Math.floor(this.media.currentTime)
+        if(currentTime % 30 === 0) {
+            this.renderAd()
+        }
+    }
+
+    private renderAd() {
+        if(this.currentAd) {
+            return
+        }
+
+        const ad = this.ads.getAd()
+        this.currentAd = ad
+        console.log(this.currentAd)
+    }
+}
+
+export default AdsPlugin
+

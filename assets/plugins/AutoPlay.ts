@@ -1,4 +1,4 @@
-import { mediaPlayer } from "../MediaPlayer.js"
+import mediaPlayer from "../MediaPlayer"
 
 class AutoPlay {
     constructor() { }
@@ -8,4 +8,4 @@ class AutoPlay {
     }
 }
 
-export {AutoPlay}
+export default AutoPlay

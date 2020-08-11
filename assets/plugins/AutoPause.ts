@@ -1,4 +1,4 @@
-import {mediaPlayer} from "../MediaPlayer.js"
+import mediaPlayer from "../MediaPlayer.js"
 
     class AutoPause {
     private threshold: number
@@ -44,4 +44,4 @@ import {mediaPlayer} from "../MediaPlayer.js"
 }
 
 
-export {AutoPause}
+export default AutoPause
