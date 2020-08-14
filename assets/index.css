@@ -41,3 +41,42 @@ div > p {
   letter-spacing: 2.5;
   padding: 10px;
 }
+
+.ads {
+  padding: 4px;
+  padding-right: 8px;
+  background: #0303036b;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ads__link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ads__img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.ads__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: azure;
+}
+
+.ads__title {
+  margin: 0;
+}
+.ads__body {
+  margin: 0;
+}

@@ -6,8 +6,8 @@ class mediaPlayer {
     constructor(config: { el: any; plugins: any }) {
         this.media = config.el
         this.plugins = config.plugins || []
-        this.initPlugins()
         this.initPlayer()
+        this.initPlugins()
     }
 
     initPlayer() {
