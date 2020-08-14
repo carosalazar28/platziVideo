@@ -2,7 +2,7 @@ class mediaPlayer {
     media: HTMLMediaElement
     plugins: Array<any>
     container: HTMLElement
-
+    
     constructor(config: { el: any; plugins: any }) {
         this.media = config.el
         this.plugins = config.plugins || []

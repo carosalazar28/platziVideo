@@ -17,7 +17,7 @@ class AdsPlugin {
 
     run(player: mediaPlayer) {
         this.player = player
-        this.player.container.append(this.adsContainer)
+        this.player.container.appendChild(this.adsContainer)
         this.media = this.player.media
         this.media.addEventListener('timeupdate', this.handleTimeUpdate)
     }
